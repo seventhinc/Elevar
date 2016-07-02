@@ -1,0 +1,59 @@
+@media screen and (max-width: 767px) {
+
+	.navbar.navbar {
+		background: #FFF;
+	}
+
+	.navbar-nav {
+		a {
+			color: $black !important;
+		}
+	}
+
+	.navbar.navbar {
+		img {
+			height: 50px;
+		}
+	}
+
+	.post-list__post {
+		width: 100%;
+	}
+
+	.home-slider .container {
+		padding: 0;
+	}
+
+	.profile__image {
+		margin: 0 -15px;
+	}
+
+	.newsletter-suscription {
+		background-image: none !important;
+	}
+
+	.team-member-top__social-links {
+		text-align: center;
+
+		ul {
+			display: inline-block;
+			margin: 5px 0;
+		}
+
+		li {
+			width: auto;
+			margin: 0 15px;
+		}
+	}
+
+	.footer__work {
+		.footer__title {
+			margin-bottom: 25px;
+		}
+	}
+
+	.footer__social {
+		margin-top: 20px;
+	}
+
+}

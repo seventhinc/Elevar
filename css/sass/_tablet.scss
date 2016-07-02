@@ -1,0 +1,94 @@
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+	#header-menu {
+		clear: both;
+	}
+
+	.post-list {
+		width: 100%;
+	}
+
+	.post-list__post {
+		/*width: 100% !important;
+		height: auto !important;*/
+	}
+
+	.navbar-nav.navbar-nav {
+		float: none !important;
+		clear: both;
+		margin-top: 10px;
+	}
+
+	.home-slider-controls.home-slider-controls {
+		top: 103px;
+	}
+
+	.home-slider__content.home-slider__content {
+		width: 100%;
+		margin-top: 297px;
+	}
+
+	.bottom-link__image,
+	.bottom-link__text {
+		margin: 0;
+		text-align: center;
+		max-width: 100%;
+	}
+
+	.bottom-link__image img {
+		max-width: 100%;
+	}
+
+	.page-content--contact--locations {
+		.row > div {
+			margin-bottom: 50px;
+		}
+	}
+
+	.location__address,
+	.location__phone,
+	.location__name,
+	.location__bottom {
+		padding: 0;
+		text-align: center;
+	}
+
+	.join__right {
+		right: 0;
+	}
+
+	.newsletter-suscription {
+		background-image: none !important;
+	}
+
+	.mc4wp-form {
+		width: 100%;
+	}
+
+	.container--bio {
+		padding-left: 0;
+	}
+
+	.footer__work {
+		.footer__title {
+			display: block;
+			margin-bottom: 15px;
+		}
+	}
+
+	/* PERSPECTIVES */
+
+	.page-content--perspectives {
+
+		.post-list__post__title.post-list__post__title {
+			height: 60px;
+		}
+
+		.post-list__post__description.post-list__post__description {
+			height: 100px;
+		}
+	}
+
+	/* END PERSPECTIVES */
+
+}
