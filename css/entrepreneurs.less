@@ -10,6 +10,58 @@
 			padding: 0 5px 0px 0;
 			overflow: hidden;
 			margin-bottom: 10px;
+			
+			 .img img {
+			  display: block;
+			  margin: 0;
+			  padding: 0;
+			  max-width: 100%;
+			  height: auto;
+			}
+
+			.overlay {
+			  display: block;
+			  position: absolute;
+			  z-index: 20;
+			  background: rgba(0, 0, 0, 0.8);
+			  overflow: hidden;
+			  -webkit-transition: all 0.5s;
+			  -moz-transition: all 0.5s;
+			  -o-transition: all 0.5s;
+			  transition: all 0.5s;
+			}
+			.overlay {
+			  bottom: 0;
+			  left: 0;
+			  width: ~"calc(100% - 5px )";
+			  height: 0;
+				padding: 0px 35px;
+				h5 {
+					padding-top: 20px;
+					float: left;
+					width: 100%;
+					color: #fff;
+					margin-bottom: 5px;
+					font-size: 16px;
+					font-weight: 700;
+				}
+				span {
+					width: 100%;
+						float: left;
+						color: #585756;
+					font-size: 14px;
+						font-weight: 700;
+						margin-bottom: 3px;
+						text-transform: uppercase;
+						&.red {
+							color: #ff4b38;
+						}
+				}
+			}
+			&.hover .overlay {
+			  height: 150px;
+			}
+			
 			img {
 				width: 100%;
 				float: left;
@@ -39,43 +91,16 @@
 					color: #7c7c7c;
 					font-size: 14px;
 				}
-				&.blk {
-					left: auto; display: none;
-					left: 0;
-					background-color: rgba(0, 0, 0, .77);
-					h5 {
-						width: 100%;
-						float: left;
-						color: #fff;
-						margin-bottom: 5px;
-					}
-					span {
-						width: 100%;
-						float: left;
-						color: #585756;
-						font-weight: 700;
-						margin-bottom: 3px;
-						text-transform: uppercase;
-						&.red {
-							color: #ff4b38;
-						}
-					}
-				}
 			}
 			
 			&:nth-child(2n+2){
-				.over-tex {	
+				.over-tex,.overlay {	
 					left: auto; right: 0;
-					&.blk{
-						left: auto; right: 0;
-					}
 				}
 			}
-			
 			&:hover{
 				.over-tex {
-					&.white{display: none}
-					&.blk{display: block;}
+					&.white{display: none;}
 				}
 			}
 			
@@ -85,7 +110,7 @@
 				&:nth-child(2n+2) {
 					padding: 0px;
 				}
-				.over-tex {
+				.over-tex,.overlay {
 					width: 100%;
 				}
 			}

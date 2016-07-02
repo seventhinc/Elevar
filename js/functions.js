@@ -28,7 +28,17 @@
 	$(document).ready(function () {
 		$body = $(document.body);
 		$window = $(window);
+		
+		 $(".img").mouseenter(function(){
+			$(this).addClass("hover");
+		})
+		// handle the mouseleave functionality
+		.mouseleave(function(){
+			$(this).removeClass("hover");
+		});
+		
 		var setSize = function () {
+			if($('.entreprenueurs-page-details .page-title .caption').length > 0){
 			if($(window).width()> 990){
 				$('.entreprenueurs-page-details .page-title .caption').insertAfter('.page-title .img');
 				var $img = $('.entreprenueurs-page-details .page-title .img'),
@@ -38,8 +48,10 @@
 				$caption.height('auto');
 				$('.entreprenueurs-page-details .page-title .caption').insertAfter('.page-content .social');
 			}
+				}
 		};
 		var teamSize = function () {
+			if($('.team-pageCaption').length > 0){
 			if($(window).width()> 1100){
 				var $img = $('.team-member-image')?$('.team-member-image'):$('.team-member'),
 				$caption = $('.team-pageCaption');				
@@ -50,6 +62,7 @@
 				$caption.height($img.height()-40);
 			}else{
 				$caption.height('auto');
+			}
 			}
 		};
 

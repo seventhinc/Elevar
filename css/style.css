@@ -4134,3 +4134,13 @@ header .container-fluid>.navbar-header {
 		width: 100%;
 	}
 }
+@media (min-width:1400px) {
+	.home-slider__content{
+		left:116px;
+	}
+}
+@media (min-width:1500px) {
+	.home-slider__content{
+		left:145px;
+	}
+}
