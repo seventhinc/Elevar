@@ -33,17 +33,30 @@
 				$('.entreprenueurs-page-details .page-title .caption').insertAfter('.page-title .img');
 				var $img = $('.entreprenueurs-page-details .page-title .img'),
 				$caption = $('.entreprenueurs-page-details .page-title .caption');
-				
 				$caption.height($img.height());
-				
-				
 			}else{
+				$caption.height('auto');
 				$('.entreprenueurs-page-details .page-title .caption').insertAfter('.page-content .social');
+			}
+		};
+		var teamSize = function () {
+			if($(window).width()> 1100){
+				var $img = $('.team-member-image')?$('.team-member-image'):$('.team-member'),
+				$caption = $('.team-pageCaption');				
+				$caption.height($img.height()-60);
+			}else if($(window).width()> 765){
+				var $img = $('.team-member-image'),
+				$caption = $('.team-pageCaption');				
+				$caption.height($img.height()-40);
+			}else{
+				$caption.height('auto');
 			}
 		};
 
 		$(window).resize(setSize); //set the function to resize
+		$(window).resize(teamSize); //set the function to resize
 		setSize(); //call the function now
+		teamSize(); //call the function now
 		
 
 	});
