@@ -51,7 +51,11 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,900|Merriweather:400,300italic,300);
 @import url(font-awesome.min.css);
 body{
-	overflow-x: hidden;
+	overflow-x: hidden; background-color: #efefef;
+}
+.body-wrapper{
+	background-color: #fff;    max-width: 1500px;
+	margin: 0 auto; overflow: hidden;
 }
 /* line 61, sass/style.scss */
 img {
@@ -122,7 +126,9 @@ img {
   background: #eeeeee;
 }
 footer{
-	background-color: #282828;
+	background-color: #909090;
+    width: calc(100% - 30px);
+    margin: 0 auto;
 }
 /* line 124, sass/style.scss */
 .icon-bar {
@@ -137,6 +143,8 @@ header {
 
 /* line 133, sass/style.scss */
 .header_logo {
+	width: 291px;
+	padding: 15px 0;
   text-align: center;
   background: #1d1d1d;
   /*padding: 15px 0;*/
@@ -153,18 +161,17 @@ header {
 }
 /* line 147, sass/style.scss */
 .navbar-nav li a {
-  color: #222222;
+  color: #222222; letter-spacing: .5px;
   text-transform: uppercase;
   padding: 0 0 2px; font-weight: 700;
 }
 /* line 152, sass/style.scss */
 .navbar-nav li a:focus, .navbar-nav li a:hover {
   background: transparent;
-  border-bottom: 2px solid;
 }
 /* line 160, sass/style.scss */
 .navbar-nav li.current-menu-item a {
-  border-bottom: 2px solid;
+  color: #7E7B7B;
 }
 
 /* line 169, sass/style.scss */
@@ -175,8 +182,8 @@ header {
 
 /* line 174, sass/style.scss */
 footer > .container {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 /* line 179, sass/style.scss */
@@ -200,7 +207,7 @@ footer > .container {
 .footer__text--phone {
   font-family: 'Lato';
   font-size: 14px;
-  color: #808080;
+  color:rgba(29, 29, 29, 0.6);
   display: block;
   margin: 5px 0;
   text-align: center;
@@ -220,11 +227,12 @@ footer > .container {
 
 /* line 211, sass/style.scss */
 .footer__title {
-  font-weight: 900;
-  color: #808080; padding-bottom: 5px;
+  font-weight: 900; padding-bottom: 5px;
   text-transform: uppercase;
 }
-
+.footer__address .footer__title{
+	letter-spacing: 1px;
+}
 /* line 217, sass/style.scss */
 .footer__social {
   margin: 60px 0 20px;
@@ -1592,25 +1600,31 @@ input[type="submit"] {
 
   /* line 10, sass/_desktop.scss */
   .navbar-nav {
-    margin-top: 49px;
+    margin-top: 25px; -webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
   }
 
   /* line 14, sass/_desktop.scss */
   .header_logo img {
-    width: auto;
+    width: 175px;
+	  -webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
   }
 
   /* line 18, sass/_desktop.scss */
   footer > .container {
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
   /* line 23, sass/_desktop.scss */
   .footer__logo {
     text-align: left;
+	  font-size: 14px; color: rgba(29, 29, 29, 0.6);
     margin-bottom: 0;
-    margin-top: 12px;
+    margin-top: 40px;
   }
 
   /* line 29, sass/_desktop.scss */
@@ -1625,12 +1639,12 @@ input[type="submit"] {
   .footer__text--country,
   .footer__text--phone {
     text-align: left;
-    line-height: 20px;
+    line-height: 16px;
   }
 
   /* line 40, sass/_desktop.scss */
   .footer__work {
-    margin: 30px 0 25px;
+    margin: 5px 0 25px;
   }
   /* line 44, sass/_desktop.scss */
   .footer__work span {
@@ -1660,7 +1674,7 @@ input[type="submit"] {
 
   /* line 69, sass/_desktop.scss */
   .home-slider {
-    height: auto; margin-bottom: 20px;
+    height: auto;
   }
 	
 	.home-slider:hover .home-slider-controls{
@@ -1692,11 +1706,11 @@ input[type="submit"] {
   /* line 96, sass/_desktop.scss */
   .home-slider__content {
     position: absolute;
-    width:45.5%;
+    width:594px;
     bottom: 0px;
     background: #fff;
     padding: 70px 35px 30px;
-	  margin: 0px; left:5%;
+	  margin: 0px; left:70px;
   }
 	.home-slider__content.red{
 		background-color: #ff4b38; border: 10px solid #fff; border-bottom: 0px;
@@ -2994,20 +3008,32 @@ input[type="submit"] {
 /*author Rayees */
 
 header{
-	position: fixed; top:0; left: 0; width: 100%;
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% - 30px);
+    max-width: 1471px;
+    right: 0;
+    margin: auto;
 }
 header.onScroll{
-	background-color:#111111;
+	background-color:#1d1d1d;
+}
+header.onScroll .header_logo img{
+	width: 130px;
+}
+header.onScroll .navbar-nav{
+	margin-top: 15px;
 }
 header.onScroll .navbar-nav li a{color: #a0a0a0;}
 .navbar-nav li a:hover,header.onScroll .navbar-nav li a:hover{
-	color: #fff;
+	color: #7E7B7B;
 }
 header .container-fluid>.navbar-header{
 	margin: 0px;
 }
 .home-slider ul{
-	margin: 0px auto; list-style: none;    max-width: 1335px; padding: 0px;
+	margin: 0px auto; list-style: none;    max-width: 1500px; padding: 0px;
 }
 .home-slider .sliderContainer{
 	 background-color: #96d3d2; width: 100%;
@@ -3083,29 +3109,50 @@ header .container-fluid>.navbar-header{
 	padding: 0px;
 }
 .newBox.img img{
-	width: 100%; height: 100%; cursor: pointer;
+	width: 100%; height: 100%; cursor: pointer; position: relative;
 }
 .newBox.img:hover .imgtext{
 	display: block;
 }
-.newBox.img:hover:after{
+.newBox.img.redBorderRightTopVer:after{
+	content: '';
+	width: 10px; height: 150px;
+	background-color: #ff4b38;
+	position: absolute; right: 0; top: 0;
+}
+.newBox.img.redBorderLeftTopHor:after{
+	content: '';
+	width: 150px; height: 10px;
+	background-color: #ff4b38;
+	position: absolute; left: 0; top: 0;
+}
+.newBox.img.svg{text-align: center;}
+.newBox.img.svg img{
+	width: 65%;
+}
+/*.newBox.img:hover:after{
 	content: '';
 	width: 100%; height: 30%; position: absolute; left: 0; bottom: 0;
 	z-index: 0; background-color: rgba(0,0,0,.7);
-}
+}*/
 .newBox.img.full:hover:after{
 	content: '';
 	width: 100%; height: 100%; position: absolute; left: 0; bottom: 0;
 	z-index: 0; background-color: rgba(35,100,187,.8);
 }
 .newBox.img .imgtext{
-	display: none; position: absolute; z-index: 1;     bottom: -20px;
-    left: 20px;
+	display: none; position: absolute; z-index: 1; bottom: 0px;
+    left: 0px;background-color: rgba(0,0,0,.7);
+	padding: 20px 20px 10px; width: 100%;
 }
 .newBox.img .imgontext{
-	position: absolute; z-index: 1; text-transform: uppercase;    bottom: -20px;
-    left: 10px;
+	position: absolute; z-index: 1; text-transform: uppercase;    bottom:0; top: 0; margin: auto;
+    left:0; text-align: center;display: none; width: 100%; height: 60px; padding: 0px;
 }
+.newBox.img .imgontext h1{
+	width: 100%; text-align: center; margin: 0; padding: 0 20px;
+}
+.newBox.img.showTxt:hover .imgontext{display: block;}
 .newBox.img .imgontext h1,.newBox.img .imgtext h1{
 	color: #fff;
 }
