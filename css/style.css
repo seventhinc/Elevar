@@ -116,15 +116,17 @@ img {
 .navbar.navbar .navbar-header.open {
   background: #1d1d1d;
 }
+@media(max-width:1025px){
+	.navbar.navbar .navbar-header{background: #1d1d1d;}
+	.navbar.navbar .navbar-header .icon-bar{background-color: #fff;}
+}
 /* line 113, sass/style.scss */
 .navbar.navbar .navbar-header.open .icon-bar {
   background: #FFF;
 }
 
 /* line 119, sass/style.scss */
-.navbar{
-  background: #eeeeee;
-}
+
 footer{
 	background-color: #909090;
     width: calc(100% - 30px);
@@ -151,7 +153,11 @@ header {
   display: block;
   float: left;
 }
-
+@media(max-width:767px){
+	.header_logo{
+		width: 165px;
+	}
+}
 /* line 141, sass/style.scss */
 .navbar-nav li {
   font-family: "Lato";
@@ -1589,21 +1595,30 @@ input[type="submit"] {
 		height: 800px;
 	  }
 	}
-@media screen and (min-width: 768px) {
-  /* line 3, sass/_desktop.scss */
-  .navbar {
-    background: transparent;
-    position: relative;
-    z-index: 10;
-    border-top: none;
-  }
-
-  /* line 10, sass/_desktop.scss */
+@media screen and (min-width:1025){
+	  /* line 10, sass/_desktop.scss */
   .navbar-nav {
     margin-top: 25px; -webkit-transition: all 0.2s;
 	-moz-transition: all 0.2s;
 	transition: all 0.2s;
   }
+}@media screen and (min-width:1025){
+	  /* line 10, sass/_desktop.scss */
+  .navbar-nav {
+    margin-top: 25px; -webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 3, sass/_desktop.scss */
+  .navbar {
+    position: relative;
+    z-index: 10;
+    border-top: none;
+  }
+
+
 
   /* line 14, sass/_desktop.scss */
   .header_logo img {
@@ -2705,9 +2720,7 @@ input[type="submit"] {
 }
 @media screen and (max-width: 767px) {
   /* line 3, sass/_mobile.scss */
-  .navbar.navbar {
-    background: #FFF;
-  }
+ 
 
   /* line 8, sass/_mobile.scss */
   .navbar-nav a {
@@ -2785,12 +2798,6 @@ input[type="submit"] {
     height: auto !important;*/
   }
 
-  /* line 16, sass/_tablet.scss */
-  .navbar-nav.navbar-nav {
-    float: none !important;
-    clear: both;
-    margin-top: 10px;
-  }
 
   /* line 22, sass/_tablet.scss */
   .home-slider-controls.home-slider-controls {
@@ -3015,7 +3022,11 @@ header{
     max-width: 1471px;
     right: 0;
     margin: auto;
+	
 }
+@media(max-width:800px){
+	header{width:100%;}
+	}
 header.onScroll{
 	background-color:#1d1d1d;
 }
@@ -3164,4 +3175,13 @@ header .container-fluid>.navbar-header{
 
 @media(max-width:767px){
 	.newList.post-list--home .newBox.horiz2{width: 100%;}
+}
+@media(max-width:1025px){
+	.navbar-nav{background-color: #fff; margin: 0px;}
+}
+@media(max-width:767px){
+	.hideInMobile{display: none}
+}
+@media(max-width:1025px){
+	.hideInIpad{display: none}
 }
