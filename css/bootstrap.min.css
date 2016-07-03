@@ -1408,14 +1408,13 @@ textarea {
 }
 
 a {
-	color: #337ab7;
+	color: #111111;
 	text-decoration: none
 }
 
 a:focus,
 a:hover {
 	color: #23527c;
-	text-decoration: underline
 }
 
 a:focus {
@@ -5240,7 +5239,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 @media (min-width:1025px) {
 	.navbar-nav {
 		float: left;
-		margin: 0
+		margin: 25px 0 0;
 	}
 	.navbar-nav>li {
 		float: left

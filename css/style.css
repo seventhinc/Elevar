@@ -149,7 +149,7 @@ img {
 .navbar.navbar .navbar-header.open {
 	background: #1d1d1d;
 }
-
+.home-slider__content__title span{font-weight: lighter;}
 @media(max-width:1025px) {
 	.navbar.navbar .navbar-header {
 		background: #1d1d1d; padding: 0 0 0 10px;
@@ -268,6 +268,7 @@ footer > .container {
 	text-align: center;
 	display: block;
 	margin-bottom: 30px;
+	color: rgba(29, 29, 29, 0.6);
 }
 
 
@@ -2305,7 +2306,9 @@ input[type="submit"] {
 		transition: all 0.2s;
 	}
 }
-
+@media(max-width:767px){
+	.page-title--team{margin-top: 80px;}
+}
 @media screen and (min-width: 768px) {
 	/* line 3, sass/_desktop.scss */
 	.navbar {
@@ -2509,8 +2512,10 @@ input[type="submit"] {
 	.page-title--entrepreneurs,
 	.page-title--about,
 	.page-title--perspectives {
-		position: static;
-		margin-bottom: 80px;
+		margin-bottom: 0px;
+	}
+	.page-title--team{
+		width: 100%; float: left;
 	}
 	/* line 164, sass/_desktop.scss */
 	.page-title__content,
@@ -2526,7 +2531,7 @@ input[type="submit"] {
 	/* line 173, sass/_desktop.scss */
 	.page-title__content__title,
 	.featured-title__content__title {
-		font-size: 54px;
+		font-size: 40px;
 		margin: 0 0 20px;
 		text-align: left;
 	}
@@ -4021,8 +4026,8 @@ header .container-fluid>.navbar-header {
 @media(max-width:1025px) {
 	.home-slider__content {
 		left: 42px;
-		padding: 30px 35px 0px;
-		width: 592px;
+		padding: 30px 30px 0px;
+		width: 616px; min-height: 180px;
 	}
 	.home-slider__content__title {
 		font-size: 30px;
@@ -4043,9 +4048,10 @@ header .container-fluid>.navbar-header {
 	.post-list--home .vert2.post-list__post--perspectives {
 		height: 235px;
 	}
+	
 	.newBox.img.svg img {
-		width: 50%;
-		margin-top: 20px;
+		width: 75%;
+		margin-top: 70px;
 	}
 	.newList.post-list--home .newBox.img.flRight {
 		float: left;
@@ -4055,8 +4061,18 @@ header .container-fluid>.navbar-header {
 	.newList.post-list--home .newBox.horiz2 {
 		width: 303px;
 	}
+	.newList.post-list--home .newBox.vert2.ipadPort{
+		height: 480px;
+	}
 	header .container-fluid{
 		padding: 0;
+	}
+	
+	.newBox.img .imgtext,.newBox.img .imgontext{
+		display: block;
+	}
+	.newBox a h1{
+		padding-bottom: 5px;
 	}
 }
 @media(min-width:801px)and(max-width:1025px){
@@ -4068,6 +4084,9 @@ header .container-fluid>.navbar-header {
 	header .container-fluid{
 		padding: 0 6px;
 	}
+	.home-slider{
+		margin-top: 92px;
+	}
 	.home-slider__content {
 		position: static;
 		width: 70%;
@@ -4078,6 +4097,12 @@ header .container-fluid>.navbar-header {
 		width:100%; border: 0px;
 		padding: 30px;
 	}
+	.post-list--home.newList.container{
+		padding: 0 65px;
+	}
+	.newList.post-list--home .newBox.vert2.ipadPort{
+		float: right;
+	}
 	.post-list,
 	.post-list--home {
 		margin-top: 20px;
@@ -4087,13 +4112,20 @@ header .container-fluid>.navbar-header {
 		width: calc(50% - 10px);
 	}
 	.newBox.img.svg img {
-		width: 40%;
+		width: 75%;
+		margin-top: 70px;
 	}
 }
 
 @media (max-width:767px) {
+	.post-list--home.newList.container{
+		padding: 0 25px;
+	}
 	header .container{
 		width: 100%; padding: 0px;
+	}
+	.home-slider{
+		margin-top: 80px;
 	}
 	.home-slider__image img {
 		width: auto;
@@ -4105,7 +4137,7 @@ header .container-fluid>.navbar-header {
 	.home-slider__content{
 		    display: inline-block; padding: 10px 0;
 	}
-	.newList.post-list--home .newBox, .newList.post-list--home .newBox.horiz2{
+	.newList.post-list--home .newBox, .newList.post-list--home .newBox.horiz2,.newList.post-list--home .newBox.vert2.ipadPort{
 		width: 100%; margin: 0 0 10px 0; height: auto;
 	}
 	.newBox.img .imgtext{position: static; display: block;background-color:#000;}
