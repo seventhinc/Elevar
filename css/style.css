@@ -1679,7 +1679,7 @@ button.alm-load-more-btn.done {
 /* line 1243, sass/style.scss */
 
 .post-list__post--perspectives .post-list__post__title:hover {
-	color: #287ed4;
+	color: #434343;
 }
 
 
@@ -2581,7 +2581,9 @@ input[type="submit"] {
 	/* FEATURED */
 	/* line 219, sass/_desktop.scss */
 	.featured-title__content__title {
-		font-size: 54px;
+		    font-size: 40px;
+    margin-bottom: 17px;
+    margin-top: 0;
 	}
 	/* line 223, sass/_desktop.scss */
 	.featured-title__content__title-container {
@@ -4116,8 +4118,10 @@ header .container-fluid>.navbar-header {
 		margin-top: 70px;
 	}
 }
-
+.container--perspective{margin-top: 130px;}
+.perspective .social_share, .related-articles{display: none;}
 @media (max-width:767px) {
+	.container--perspective{margin-top: 100px;}
 	.post-list--home.newList.container{
 		padding: 0 25px;
 	}

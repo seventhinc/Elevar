@@ -37,6 +37,25 @@
 			$(this).removeClass("hover");
 		});
 		
+			$("#contactForm").submit(function(){	
+var url = "contact.php?"+"name="+$('#name').val()+"&message="+$('#message').val()+"&email="+$('#email').val()+"&organization="+$('#organization').val();
+					$.ajax({
+				   type: "POST",
+				   url: url,
+				   contentType:false,
+				   processData: false,
+				//   data: formData, // serializes the form's elements.
+				   success: function(data)
+				   {
+					  $('#contactForm').find('.message').text('Your message has been sent successfully.'); 
+					  $("#contactForm")[0].reset(); 
+				   }
+				 });
+
+			return false; // avoid to execute the actual submit of the form.
+			});
+		
+		
 		var setSize = function () {
 			if($('.entreprenueurs-page-details .page-title .caption').length > 0){
 				var $img = $('.entreprenueurs-page-details .page-title .img'),
