@@ -4010,7 +4010,9 @@ header .container-fluid>.navbar-header {
 .newBox.img .imgtext h1 {
 	color: #fff;
 }
-
+.newBox .content-box{
+	position: relative;
+}
 @media(max-width:1199px) {
 	.newList.post-list--home .newBox.img.flRight {
 		float: left;
@@ -4151,12 +4153,14 @@ header .container-fluid>.navbar-header {
 	.home-slider{
 		margin-top: 80px;
 	}
+	.about .home-slider__image{display: inline-block; width: 100%;}
+	.about .home-slider__image img{margin-right: -20px}
 	.home-slider__image img {
 		width: auto;
 		max-height: 360px;
 		max-width: none;
 		float: right;
-		margin-right: -20px;
+		margin-right:0px;
 	}
 	.home-slider__content{
 		    display: inline-block; padding: 10px 0;
