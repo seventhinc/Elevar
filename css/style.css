@@ -795,6 +795,11 @@ button.alm-load-more-btn.done {
 	font-size: 18px;
 	line-height: 1.5em;
 }
+@media (max-width:767px){
+	.page-content__content {
+		font-size: 14px; line-height: 22px;
+	}
+}
 
 
 /* line 608, sass/style.scss */
