@@ -281,6 +281,18 @@ footer > .container {
 }
 
 
+.back_to {
+	
+	font-family: 'Lato';
+	font-size: 16px;
+	color: rgba(29, 29, 29, 0.6);
+	display: block;
+	font-weight: 700;
+	
+}
+
+
+
 /* line 190, sass/style.scss */
 
 .footer__title,
@@ -303,6 +315,7 @@ footer > .container {
 	margin: 10px 0 0;
 	line-height: 15px !important;
 }
+
 
 
 /* line 206, sass/style.scss */
