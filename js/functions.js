@@ -36,7 +36,15 @@
 			.mouseleave(function () {
 				$(this).removeClass("hover");
 			});
-
+if($('#numberSlider').length > 0){
+		$('#numberSlider').bxSlider({
+			infiniteLoop:true,
+			responsive:true,
+			touchEnabled: true,
+			controls:false,
+			pager:false
+		});
+	}
 		$("#contactForm").submit(function () {
 			var formValid = false,
 				nameValid = false,
