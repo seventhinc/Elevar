@@ -3797,7 +3797,7 @@ header .container-fluid>.navbar-header {
 }
 
 .home-slider .sliderContainer {
-	background-color: #96d3d2;
+	background-color: #e1e1e1;
 	width: 100%;
 }
 
@@ -4023,9 +4023,37 @@ header .container-fluid>.navbar-header {
 .newBox.img .imgtext h1 {
 	color: #fff;
 }
-.newBox .content-box{
-	position: relative;
+.newBox #numberSlider{
+	list-style: none; margin: 0px; padding: 0px;
 }
+.newBox #numberSlider li{
+	width: 100%; float: left; position: relative; min-height: 125px;
+}
+.newBox #numberSlider span{
+	border: 0px; position: static; margin: 0px; padding: 0px;
+	font-family: "lato";
+}
+
+.newBox #numberSlider span.title{
+	color: #fff; font-size: 54px;
+	line-height: 50px; font-weight: bolder; margin-bottom: 5px;
+}
+.newBox #numberSlider span.tag{
+	color: #fff; font-size: 24px;
+	line-height: 26px; font-weight: 600;
+}
+.newBox .content-box{
+	width: 200px;
+    height: 120px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
 @media(max-width:1199px) {
 	.newList.post-list--home .newBox.img.flRight {
 		float: left;
