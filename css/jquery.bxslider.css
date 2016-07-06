@@ -19,10 +19,7 @@
 	margin: 0 auto;
 	padding: 0;
 	*zoom: 1;
-	-moz-box-shadow: 0 0 5px #ccc;
-	-webkit-box-shadow: 0 0 5px #ccc;
-	box-shadow: 0 0 5px #ccc;
-	background: #fff;
+	background: transparent;
 	width: 100% !important;
 	max-width: 100% !important;
 }

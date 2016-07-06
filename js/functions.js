@@ -38,6 +38,8 @@
 			});
 if($('#numberSlider').length > 0){
 		$('#numberSlider').bxSlider({
+			auto:true,
+			mode:'vertical',
 			infiniteLoop:true,
 			responsive:true,
 			touchEnabled: true,
