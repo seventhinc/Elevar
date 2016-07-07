@@ -2435,7 +2435,7 @@ input[type="submit"] {
 		left: 70px;
 	}
 	.home-slider__content.red {
-		background-color: #ff4b38;
+		background-color: #fff;
 		border: 10px solid #fff;
 		border-bottom: 0px;
 	}
@@ -2454,7 +2454,7 @@ input[type="submit"] {
 	}
 	.home-slider__content.red .home-slider__content__description {
 		display: block;
-		font-size: 22px;
+		font-size: 20px;
 	}
 	/* line 110, sass/_desktop.scss */
 	.home-slider__content__description {
@@ -4240,7 +4240,7 @@ header .container-fluid>.navbar-header {
 		max-height: 360px;
 		max-width: none;
 		float: right;
-		margin-right:0px;
+		margin-right:-20px;
 	}
 	.home-slider__content{
 		    display: inline-block; padding: 10px 0;
