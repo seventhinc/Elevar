@@ -196,8 +196,9 @@
 }
 
 .page-title.contactUs {
-	margin-top: 150px;
+	margin-top: 200px;
 	margin-bottom: 10px;
+	
 	.page-title-left {
 		width: 27%;
 		float: left;
@@ -747,7 +748,7 @@
 	}
 }
 
-.entreprenueurs-page-details {
+.entreprenueurs-page-details,.legal {
 	margin-bottom: 70px;
 	.page-title {
 		width: 100%;
@@ -1035,10 +1036,40 @@
 		}
 	}
 }
-
+.legal{
+	margin-bottom: 0px;
+	.page-title__content{
+		margin: 100px 0 30px;
+	}
+	.page-content {
+		article{
+			width: 75%;
+			float: right;
+		}
+	}
+}
 @media (max-width:1100px) {
 	.team-page.team-page-details .team-pageCaption {
 		padding: 20px;
 		font-size: 25px;
+	}
+}
+.featured_post{
+	.post-list__post__image{
+		width: 50%; float: left;
+	}
+	.post-list__post__info{
+		margin-top: 0px;
+		width: 48%; float: right;
+		h1.post-list__post__title{
+			margin: 0px; height: auto; font-size: 35px; font-weight: 700;
+			margin-bottom: 20px;
+		}
+		.post-list__post__description{
+			.featured-title__content__link.border-box{
+				width: 100px;
+    			margin-top: 20px; display: block;
+			}
+		}
 	}
 }
