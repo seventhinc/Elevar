@@ -94,10 +94,10 @@ if($('#numberSlider').length > 0){
 					contentType: false,
 					processData: false,
 					beforeSend: function () {
-						$('#contactForm').find('.message').html('<img src="images/loading.gif" alt="loading">');
+						$('#contactForm').find('.successMessage').html('<img src="images/loading.gif" alt="loading">');
 					},
 					success: function (data) {
-						$('#contactForm').find('.message').html('Your message has been sent successfully.');
+						$('#contactForm').find('.successMessage').html('Thank you for contacting us. We will revert shortly.');
 						$("#contactForm")[0].reset();
 					}
 				});

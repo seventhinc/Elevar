@@ -1,5 +1,5 @@
 <?php
-$to = "rahees148@gmail.com";
+$to = "info@elevarequity.com";
 $subject = "Contact web form";
 
 
