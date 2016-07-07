@@ -282,13 +282,13 @@ footer > .container {
 
 
 .back_to {
-	
+
 	font-family: 'Lato';
 	font-size: 16px;
 	color: rgba(29, 29, 29, 0.6);
 	display: block;
 	font-weight: 700;
-	
+
 }
 
 
@@ -3821,7 +3821,16 @@ header .container-fluid>.navbar-header {
 	position: relative;
 	max-width: 100%;
 }
-
+.newList.post-list--home .newBox.bgImg{
+	min-height: 235px;
+}
+.newList.post-list--home .newBox.bgImg:hover {
+	background-image: url(../images/worklife_home.jpg);
+	background-size: 100%; cursor: pointer;
+}
+.newList.post-list--home .newBox.bgImg:hover a,.newList.post-list--home .newBox.bgImg:hover span{
+	display: none;
+}
 .newList.post-list--home .newBox.horiz2 {
 	width: 593px;
 	max-width: 100%;
@@ -4007,7 +4016,26 @@ header .container-fluid>.navbar-header {
 	height: 60px;
 	padding: 0px;
 }
-
+.newList.post-list--home .newBox.img.svg{
+	position: relative; min-height: 230px;
+}
+	.newList.post-list--home .newBox.img.svg a{
+		width: 175px;
+    height: 125px;
+    position: absolute;
+    left: 0;
+    color: #fff;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 25px;
+    line-height: 30px;
+    font-family: "lato";
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+}
 .newBox.img .imgontext h1 {
 	width: 100%;
 	text-align: center;
@@ -4113,7 +4141,7 @@ header .container-fluid>.navbar-header {
 	.post-list--home .vert2.post-list__post--perspectives {
 		height: 235px;
 	}
-	
+
 	.newBox.img.svg img {
 		width: 75%;
 		margin-top: 70px;
@@ -4132,7 +4160,7 @@ header .container-fluid>.navbar-header {
 	header .container-fluid{
 		padding: 0;
 	}
-	
+
 	.newBox.img .imgtext,.newBox.img .imgontext{
 		display: block;
 	}
@@ -4194,8 +4222,6 @@ header .container-fluid>.navbar-header {
 	.home-slider{
 		margin-top: 80px;
 	}
-	.about .home-slider__image{display: inline-block; width: 100%;}
-	.about .home-slider__image img{margin-right: -20px}
 	.home-slider__image img {
 		width: auto;
 		max-height: 360px;
@@ -4218,6 +4244,14 @@ header .container-fluid>.navbar-header {
 	.newBox.img.svg img{
 		margin: 0px; width: 55%;
 	}
+	.newList.post-list--home .newBox.bgImg{min-height: auto;}
+	.newList.post-list--home .newBox.bgImg:hover {
+		background-image: none; 
+	}
+	.newList.post-list--home .newBox.bgImg:hover a,.newList.post-list--home .newBox.bgImg:hover span{
+		display: block;
+	}
+	
 	.footer__address, .footer_work{
 		padding: 0px;
 	}
@@ -4227,7 +4261,7 @@ header .container-fluid>.navbar-header {
 	header.onScroll .navbar-toggle{
 		margin-top: 10px;
 	}
-	
+
 }
 
 @media (max-width:500px) {
