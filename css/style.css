@@ -3841,6 +3841,16 @@ header .container-fluid>.navbar-header {
 .newList.post-list--home .newBox.bgImgGeo:hover a,.newList.post-list--home .newBox.bgImgGeo:hover span{
 	display: none;
 }
+.newList.post-list--home .newBox.bgImgfollow{
+	min-height: 235px;
+}
+.newList.post-list--home .newBox.bgImgfollow:hover {
+	background-image: url(../images/small-following-the-customer.jpg);
+	background-size: 100%; cursor: pointer;
+}
+.newList.post-list--home .newBox.bgImgfollow:hover a,.newList.post-list--home .newBox.bgImgGeo:hover span{
+	display: none;
+}
 .newList.post-list--home .newBox.horiz2 {
 	width: 593px;
 	max-width: 100%;
