@@ -1,5 +1,8 @@
 .page-content--entrepreneurs {
 	margin-top: 80px;
+	@media(max-width:767px){
+		margin-top: 0px;
+	}
 	.entrepreneurs-row {
 		margin: 0px; width: 100%; float: left;
 		padding: 0 0px;
@@ -63,6 +66,9 @@
 			}
 			&.hover .overlay {
 				height: 50px;
+				@media(max-width:1050px){
+					height: 0px;
+				}
 			}
 			img {
 				width: 100%;
@@ -118,6 +124,14 @@
 				&:nth-child(2n+2){
 					background-color:transparent;
 				}
+				&:hover {
+				img{opacity: 0;}
+				.over-tex {
+					&.white {
+						opacity: 1;
+					}
+				}
+			}
 			}@media(max-width:650px){
 				width:100%; margin: 0px 0px 30px ;
 				&:nth-child(2n+2){
@@ -521,6 +535,9 @@
 							text-align: right;
 							font-size: 55px; font-weight: 700;
 							line-height: 58px; color: #5c5c5c;
+							@media(max-width:600px){
+								font-size: 45px;
+							}
 						}
 						&.tag{
 							font-size: 18px; font-weight: 400;
@@ -627,13 +644,16 @@
 		}
 	}
 	@media(max-width:970px) {
-			margin: 50px 0;
+			margin: 20px 0;
 		}
 	
 }
 
 .team-page {
 	margin-bottom: 150px;
+	&.headerMargin{
+		margin-top: 80px;
+	}
 	.leftNav {
 		width: 32.3%;
 		float: left;
@@ -688,31 +708,63 @@
 				}
 			}
 		}
+		.row{
+			margin-right: 0px;
+			margin-left: 0px;
+		}
+		.table{
+			display: table; float: none;
+			.table-row{
+				display: table-row; float: none;
+			}
+			.table-cell{
+				display: table-cell; float: none;
+			}
+			@media(max-width:990px) {
+				display: block;
+				.table-row,.table-cell{
+					display: block; float: left;
+				}
+			}
+		}
+		
 	.rightWrapper {
 		width: 65%;
 		float: right;
 		
+	
 		@media(max-width: 970px) {
 			width: 100%;
 		}
 	}
 	.team-pageCaption {
 		background-color: #ff4b38;
-		padding: 70px;
+		padding:0; vertical-align: middle;
 		font-family: 'Lato';
-		font-size: 30px;
 		font-weight: 400;
 		color: #110504;
-		line-height:37px;
+		.caption{
+			position: absolute; top: 50%;
+			transform: translateY(-50%);
+			padding: 0 45px;
+			font-size: 28px;
+			line-height:35px;
+			
+			@media(max-width:1150px){
+				font-size: 20px;
+				line-height:27px;				
+			}
+			@media(max-width:990px){
+				font-size: 25px;
+				line-height:32px;				
+			}
+			@media(max-width:400px){
+				font-size: 20px;
+				line-height:24px;				
+			}
+		}
 		&.blue {
 			background-color: #96d3d2;
-		}
-		@media(max-width:1100px) {
-			padding: 37px;
-			font-size: 30px;
-		}
-		@media(max-width:767px) {
-			margin-bottom: 20px;
 		}
 	}
 	&.team-page-details {
@@ -774,6 +826,21 @@
 		@media(max-width:990px) {
 			margin-top: 100px;
 			margin-bottom: 10px;
+		}
+		&.table{
+			display: table; float: none;
+			.table-row{
+				display: table-row; float: none;
+			}
+			.table-cell{
+				display: table-cell; float: none;
+			}
+			@media(max-width:990px) {
+				display: block;
+				.table-row,.table-cell{
+					display: block; float: left;
+				}
+			}
 		}
 	}
 	.caption {
@@ -841,6 +908,11 @@
 				}
 			}
 		}
+		@media(max-width:500px){
+			.captionText {
+				padding-top: 50px;
+			}
+		}
 	}
 	.page-content {
 		width: 100%;
@@ -850,6 +922,11 @@
 		.social {
 			width: 18%;
 			float: left;
+			
+			&.float{
+				position: fixed;top: 140px;
+			}
+			
 			label {
 				font-weight: lighter;
 				color: #b3b3b3;
@@ -863,6 +940,9 @@
 				float: left;
 				opacity: .4;
 				margin: 10px 20px 0 0;
+			}
+			.a2a_button_email{
+				width: 29px;
 			}
 			@media(max-width:990px) {
 				width: 100px;
@@ -885,6 +965,12 @@
 					margin-right: 8px;
 					width: 19px;
 				}
+				.a2a_button_email{
+					width: 23px;
+				}
+			}
+			@media(max-width:500px){
+				top: -200px;
 			}
 		}
 		article {
@@ -896,6 +982,9 @@
 			padding-left: 20px;
 			color: #111;
 			line-height: 1.5em;
+			&.floatingSocial{
+				margin-left: 20%;
+			}
 			h2 {
 				margin: 0px 0 10px;
 				color: #ff4b38;
@@ -1055,6 +1144,7 @@
 	}
 }
 .featured_post{
+	width: 100%; float: left; padding-bottom: 50px;
 	.post-list__post__image{
 		width: 50%; float: left;
 	}
@@ -1072,4 +1162,40 @@
 			}
 		}
 	}
+	@media (max-width:767px){
+		.post-list__post__image{display: none;}
+		.post-list__post__info{width: 100%;}
+	}
+}
+.page-content--perspectives--top{
+	.featured-title__content__link.border-box{
+		width: 100px;
+		margin-top: 20px; display: block;
+	}
+	@media(max-width:990px){
+		.post-list__post--perspectives{
+			
+		width: 100%; float: left;padding-bottom: 50px; margin-bottom: 50px; border-bottom: 1px solid #dfdfdf;
+			.post-list__post__image{
+				width: 48%; float: left;
+			}
+			.post-list__post__info{
+				width: 48%; float: right;
+				.post-list__post__category,.post-list__post__date{display: none;}
+			}
+		}
+	}
+	@media (max-width:767px){
+		.post-list__post--perspectives{
+			
+		width: 100%; float: left;padding-bottom: 50px; margin-bottom: 50px; border-bottom: 1px solid #dfdfdf;
+			.post-list__post__image{
+				width: 48%; float: left; display: none;
+			}
+			.post-list__post__info{
+				width: 100%; float: right;
+			}
+		}
+	}
+	
 }

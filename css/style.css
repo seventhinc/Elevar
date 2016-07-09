@@ -2428,7 +2428,7 @@ input[type="submit"] {
 	.home-slider__content {
 		position: absolute;
 		width: 594px;
-		bottom: 0px;
+		bottom: -2px;
 		background: #fff;
 		padding: 70px 35px 30px;
 		margin: 0px;
@@ -2733,7 +2733,7 @@ input[type="submit"] {
 	/* line 358, sass/_desktop.scss */
 	.team-member .name {
 		float: left;
-		width: 65%;
+		width: 100%;
 		font-size: 24px;
 		text-align: left;
 		margin: 0;
@@ -3014,7 +3014,7 @@ input[type="submit"] {
 	.page-content--perspectives--top .post-list__post--perspectives .post-list__post__image,
 	.page-content--perspectives--bottom .post-list__post--perspectives .post-list__post__image {
 		text-align: center;
-		min-height: 289px;
+		min-height: auto;
 	}
 	/* line 643, sass/_desktop.scss */
 	.page-content--perspectives .post-list__post--perspectives .post-list__post__title,
@@ -3826,9 +3826,9 @@ header .container-fluid>.navbar-header {
 }
 .newList.post-list--home .newBox.bgImg:hover {
 	background-image: url(../images/worklife_home.jpg);
-	background-size: 100%; cursor: pointer;
+	background-size: 100%;
 }
-.newList.post-list--home .newBox.bgImg:hover a,.newList.post-list--home .newBox.bgImg:hover span{
+.newList.post-list--home .newBox.bgImg:hover h1,.newList.post-list--home .newBox.bgImg:hover span{
 	display: none;
 }
 .newList.post-list--home .newBox.bgImgGeo{
@@ -3836,9 +3836,9 @@ header .container-fluid>.navbar-header {
 }
 .newList.post-list--home .newBox.bgImgGeo:hover {
 	background-image: url(../images/geogrphy-small.gif);
-	background-size: 100%; cursor: pointer;
+	background-size: 100%;
 }
-.newList.post-list--home .newBox.bgImgGeo:hover a,.newList.post-list--home .newBox.bgImgGeo:hover span{
+.newList.post-list--home .newBox.bgImgGeo:hover h1,.newList.post-list--home .newBox.bgImgGeo:hover span{
 	display: none;
 }
 .newList.post-list--home .newBox.bgImgfollow{
@@ -3846,9 +3846,9 @@ header .container-fluid>.navbar-header {
 }
 .newList.post-list--home .newBox.bgImgfollow:hover {
 	background-image: url(../images/small-following-the-customer.jpg);
-	background-size: 100%; cursor: pointer;
+	background-size: 100%;
 }
-.newList.post-list--home .newBox.bgImgfollow:hover a,.newList.post-list--home .newBox.bgImgGeo:hover span{
+.newList.post-list--home .newBox.bgImgfollow:hover h1,.newList.post-list--home .newBox.bgImgGeo:hover span{
 	display: none;
 }
 .newList.post-list--home .newBox.horiz2 {
@@ -3879,7 +3879,12 @@ header .container-fluid>.navbar-header {
 .newList.post-list--home .box--red:hover {
 	background-color: rgba(255, 75, 56, 0.90);
 }
-
+.newBox a{position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0; z-index: 1;
+	padding: 45px;}
 .newBox a h1 {
 	font-size: 22px;
 	font-weight: 600;
@@ -4007,7 +4012,7 @@ header .container-fluid>.navbar-header {
 	left: 0px;
 	background-color: rgba(0, 0, 0, .7);
 	padding: 20px 20px 10px;
-	width: 100%;
+	width: 100%; border: 0px;
 }
 
 .newBox.img .imgtext.fullHeight {
@@ -4027,7 +4032,7 @@ header .container-fluid>.navbar-header {
 
 .newBox.img .imgontext {
 	position: absolute;
-	z-index: 1;
+	z-index: 1; border: 0px;
 	text-transform: uppercase;
 	bottom: 0;
 	top: 0;
@@ -4043,21 +4048,14 @@ header .container-fluid>.navbar-header {
 	position: relative; min-height: 230px;
 }
 	.newList.post-list--home .newBox.img.svg a{
-		width: 175px;
-    height: 125px;
-    position: absolute;
-    left: 0;
     color: #fff;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
     font-size: 25px;
     line-height: 30px;
     font-family: "lato";
     text-transform: uppercase;
     text-align: center;
     font-weight: 900;
+		padding: 170px 40px;
 }
 .newBox.img .imgontext h1 {
 	width: 100%;
@@ -4148,6 +4146,33 @@ header .container-fluid>.navbar-header {
 	.home-slider__content__title {
 		font-size: 30px;
 	}
+	
+	
+	.newList.post-list--home .newBox.bgImg:hover {
+		background-image:none;
+	}
+	.newList.post-list--home .newBox.bgImg:hover h1,.newList.post-list--home .newBox.bgImg:hover span{
+		display: block;
+	}
+	.newList.post-list--home .newBox.bgImgGeo:hover {
+		background-image:none;
+	}
+	.newList.post-list--home .newBox.bgImgGeo:hover h1,.newList.post-list--home .newBox.bgImgGeo:hover span{
+		display: block;
+	}
+	.newList.post-list--home .newBox.bgImgfollow:hover {
+		background-image: none;
+	}
+	.newList.post-list--home .newBox.bgImgfollow:hover h1,.newList.post-list--home .newBox.bgImgGeo:hover span{
+		display: block;
+	}
+	
+	
+	.newList.post-list--home .newBox.bgImg{min-height: auto;}
+	.newList.post-list--home .newBox.bgImg:hover {
+		background-image: none; 
+	}
+	
 	.page-title__content__link,
 	.home-slider__content__link,
 	.post-list__post__link,
@@ -4205,7 +4230,8 @@ header .container-fluid>.navbar-header {
 	}
 	.home-slider__content {
 		position: static;
-		width: 70%;
+		width: 70%;height: auto;
+    min-height: auto;
 		padding: 30px 0;
 	}
 	.image-slider .home-slider__content.red {
@@ -4231,6 +4257,12 @@ header .container-fluid>.navbar-header {
 		width: 75%;
 		margin-top: 70px;
 	}
+	.footer__logo{
+		font-size: 12px;
+	}
+	.footer__work .footer__title{
+		margin-bottom: 0px;
+	}
 }
 .container--perspective{margin-top: 130px;}
 .perspective .social_share, .related-articles{display: none;}
@@ -4252,13 +4284,23 @@ header .container-fluid>.navbar-header {
 		float: right;
 		margin-right:-20px;
 	}
+	.home-slider__content {
+		width: 594px; height: auto;min-height:50px;
+		left: 70px; 
+	}
 	.home-slider__content{
 		    display: inline-block; padding: 10px 0;
 	}
 	.newList.post-list--home .newBox, .newList.post-list--home .newBox.horiz2,.newList.post-list--home .newBox.vert2.ipadPort{
 		width: 100%; margin: 0 0 10px 0; height: auto;
 	}
+	.newBox a{position: static; padding: 0px;}
 	.newBox.img .imgtext{position: static; display: block;background-color:#000;}
+	.newBox.img .imgtext.fullHeight h1{position: static; height: auto;}
+	.newList.post-list--home .newBox.img.svg a{
+		    width: 100%; max-width: 300px; display: inline-block;
+			margin: 0px;padding: 0 40px;
+	}
 	.newBox.img .imgontext{position: static; display: block;background-color:rgb(35, 100, 187); padding: 20px 0; height: auto;}
 	.newBox span{position: static;}
 	.newList.post-list--home .newBox.img.svg{
@@ -4267,10 +4309,8 @@ header .container-fluid>.navbar-header {
 	.newBox.img.svg img{
 		margin: 0px; width: 55%;
 	}
-	.newList.post-list--home .newBox.bgImg{min-height: auto;}
-	.newList.post-list--home .newBox.bgImg:hover {
-		background-image: none; 
-	}
+	
+	
 	.newList.post-list--home .newBox.bgImg:hover a,.newList.post-list--home .newBox.bgImg:hover span{
 		display: block;
 	}
