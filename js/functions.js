@@ -42,6 +42,9 @@
 	$(document).ready(function () {
 		$body = $(document.body);
 		$window = $(window);
+		
+		$('.team-page-details .rightWrapper .col-sm-6').wrapAll('<div class="table"><div class="table-row"></div></div>')
+		$('.team-page-details .rightWrapper .col-sm-6').addClass('table-cell');
 
 		$(".img").mouseenter(function () {
 				$(this).addClass("hover");
