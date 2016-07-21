@@ -277,7 +277,7 @@ footer > .container {
 .footer__address,
 .footer_work {
 	margin: 30px 0;
-	padding: 0 25% 0 0;
+	padding: 0 15% 0 0;
 }
 
 
@@ -3020,7 +3020,7 @@ input[type="submit"] {
 	.page-content--perspectives .post-list__post--perspectives .post-list__post__title,
 	.page-content--perspectives--top .post-list__post--perspectives .post-list__post__title,
 	.page-content--perspectives--bottom .post-list__post--perspectives .post-list__post__title {
-		height: 90px;
+		height: auto;
 	}
 	/* line 647, sass/_desktop.scss */
 	.page-content--perspectives .post-list__post--perspectives .post-list__post__description,
@@ -4146,8 +4146,8 @@ header .container-fluid>.navbar-header {
 	.home-slider__content__title {
 		font-size: 30px;
 	}
-	
-	
+
+
 	.newList.post-list--home .newBox.bgImg:hover {
 		background-image:none;
 	}
@@ -4166,13 +4166,13 @@ header .container-fluid>.navbar-header {
 	.newList.post-list--home .newBox.bgImgfollow:hover h1,.newList.post-list--home .newBox.bgImgGeo:hover span{
 		display: block;
 	}
-	
-	
+
+
 	.newList.post-list--home .newBox.bgImg{min-height: auto;}
 	.newList.post-list--home .newBox.bgImg:hover {
-		background-image: none; 
+		background-image: none;
 	}
-	
+
 	.page-title__content__link,
 	.home-slider__content__link,
 	.post-list__post__link,
@@ -4286,7 +4286,7 @@ header .container-fluid>.navbar-header {
 	}
 	.home-slider__content {
 		width: 594px; height: auto;min-height:50px;
-		left: 70px; 
+		left: 70px;
 	}
 	.home-slider__content{
 		    display: inline-block; padding: 10px 0;
@@ -4309,12 +4309,12 @@ header .container-fluid>.navbar-header {
 	.newBox.img.svg img{
 		margin: 0px; width: 55%;
 	}
-	
-	
+
+
 	.newList.post-list--home .newBox.bgImg:hover a,.newList.post-list--home .newBox.bgImg:hover span{
 		display: block;
 	}
-	
+
 	.footer__address, .footer_work{
 		padding: 0px;
 	}
@@ -4341,4 +4341,24 @@ header .container-fluid>.navbar-header {
 	.home-slider__content{
 		left:145px;
 	}
+}
+
+.alignright{
+	float: right;
+}
+.alignleft{
+	float: left;
+}
+.perspective__content blockquote{
+	margin-left: 0px;
+	border-left: 5px solid #ff4b37;
+	width: 100%;
+	display: inline-block;
+	padding-left: 20px;
+}
+.perspective__content blockquote p{
+	font-family: Merriweather;
+	font-weight: lighter;
+	font-size: 18px;
+	margin: 0px;
 }
