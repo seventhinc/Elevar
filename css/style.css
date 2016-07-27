@@ -807,6 +807,7 @@ button.alm-load-more-btn.done {
 	font-family: "Merriweather";
 	font-size: 18px;
 	line-height: 1.5em;
+	font-weight: lighter;
 }
 @media (max-width:767px){
 	.page-content__content {
@@ -1804,9 +1805,10 @@ button.alm-load-more-btn.done {
 .profile__body__content blockquote p {
 	font-family: "Merriweather";
 	font-weight: lighter;
-	font-style: italic;
+	font-style: normal;;
 	font-size: 32px;
-	color: #999999;
+	color: #222;
+	line-height: 1.5em;
 }
 
 
@@ -4363,6 +4365,7 @@ header .container-fluid>.navbar-header {
 	font-weight: lighter;
 	font-size: 18px;
 	margin: 0px;
+	color: #222222;
 }
 .perspective__content blockquote.ltr{
 	margin-left: 100px;
