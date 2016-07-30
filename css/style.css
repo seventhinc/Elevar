@@ -1715,7 +1715,7 @@ button.alm-load-more-btn.done {
 .post-list__post__description {
 	margin-top: 35px;
 	font-family: "Merriweather";
-	font-weight: "lighter";
+  font-weight: lighter;
 	font-size: 18px;
 	color: #222;
 }
