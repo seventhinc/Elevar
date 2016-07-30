@@ -534,7 +534,7 @@ footer > .container {
 
 .post-list,
 .post-list--home {
-	margin: 45px auto 120px;
+	margin: 60px auto 120px;
 	padding: 0;
 }
 
@@ -586,7 +586,7 @@ footer > .container {
 .post-list__post--featured__title {
 	font-family: 'Lato';
 	font-size: 24px;
-	font-weight: 400;
+	font-weight: 600;
 	color: #222222;
 	position: relative;
 	z-index: 1;
@@ -1781,10 +1781,11 @@ button.alm-load-more-btn.done {
 .profile__body__excerpt h2,
 .profile__body__content h2 {
 	font-family: "Merriweather";
-  font-weight: lighter;
   font-size: 24px;
-  color: #999999;
-	font-weight: normal;
+	line-height: 30px;
+  color: #525252;
+	font-weight: bold;
+	font-style: italic;;
 }
 
 
@@ -2375,7 +2376,9 @@ input[type="submit"] {
 	}
 	/* line 40, sass/_desktop.scss */
 	.footer__work {
-		margin: 5px 0 25px;
+		margin: 15px 0 5px;
+		width: 100%;
+float: left;
 	}
 	/* line 44, sass/_desktop.scss */
 	.footer__work span {
@@ -2387,7 +2390,9 @@ input[type="submit"] {
 		font-size: 14px;
 		text-transform: none;
 		margin-top: 0;
-		display: inline-block;
+	width: auto;
+	float: left;
+	clear: both;
 	}
 	/* line 57, sass/_desktop.scss */
 	.footer__social {
@@ -3854,7 +3859,7 @@ header .container-fluid>.navbar-header {
 	background-image: url(../images/small-following-the-customer.jpg);
 	background-size: 100%;
 }
-.newList.post-list--home .newBox.bgImgfollow:hover h1,.newList.post-list--home .newBox.bgImgGeo:hover span{
+.newList.post-list--home .newBox.bgImgfollow:hover h1, .newList.post-list--home .newBox.bgImgfollow:hover span{
 	display: none;
 }
 .newList.post-list--home .newBox.horiz2 {
@@ -4379,4 +4384,16 @@ header .container-fluid>.navbar-header {
 
 .clearBoth{
 	clear: both;
+}
+
+.latesNews{
+	padding: 0px;
+	list-style: none;
+}
+.latesNews ul{
+	padding: 0px; margin: 0px;
+	list-style: none;
+}
+.latesNews li{
+	padding: 10px 0; border-bottom: 1px solid #777777;
 }
