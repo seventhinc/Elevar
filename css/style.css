@@ -329,7 +329,7 @@ footer > .container {
 
 .footer__title {
 	font-weight: 900;
-	padding-bottom: 5px;
+	padding-bottom: 2px;
 	text-transform: uppercase;
 }
 
@@ -611,8 +611,8 @@ footer > .container {
 	font-size: 14px;
 	font-weight: 600;
 	color: #999999;
-	position: absolute;
-	bottom: 30px;
+	width: 100%; float: left;
+	margin-top: 30px;
 }
 
 
@@ -2389,11 +2389,17 @@ float: left;
 	.footer__work .footer__title {
 		font-size: 14px;
 		text-transform: none;
-		margin-top: 0;
-	width: auto;
-	float: left;
-	clear: both;
 	}
+	.footer__work a.footer__title{
+		margin: 0px 2px 0px;
+		padding-right: 7px;
+		border-right: 1px solid #626262;
+		display: inline-block;
+	}
+	.footer__work a.footer__title:last-child{
+		border-right: 0px;
+	}
+
 	/* line 57, sass/_desktop.scss */
 	.footer__social {
 		text-align: left;
@@ -3884,9 +3890,7 @@ header .container-fluid>.navbar-header {
 	background-color: #a6dad9;
 }
 
-.newList.post-list--home .box--red {
-	background-color: #ff4b38;
-}
+
 .newList.post-list--home .box--red:hover {
 	background-color: rgba(255, 75, 56, 0.90);
 }
@@ -4127,6 +4131,7 @@ header .container-fluid>.navbar-header {
 	.newList.post-list--home .newBox.horiz2 {
 		width: 100%;
 	}
+	.newBox.img.full:hover:after{display: none;}
 }
 
 @media(max-width:1025px) {
@@ -4335,12 +4340,19 @@ header .container-fluid>.navbar-header {
 	header.onScroll .navbar-toggle{
 		margin-top: 10px;
 	}
-
+.perspective__content blockquote.rtl{
+	margin-left: 0px;
+}
 }
 
 @media (max-width:500px) {
 	.home-slider__content{
 		width: 100%;
+	}
+}
+@media (max-width:360px) {
+	.home-slider__image img {
+		max-height: 175px;
 	}
 }
 @media (min-width:1400px) {
@@ -4396,4 +4408,28 @@ header .container-fluid>.navbar-header {
 }
 .latesNews li{
 	padding: 10px 0; border-bottom: 1px solid #777777;
+}
+.footer__work.links{
+	margin-top: 10px;
+}
+.footer__work a.social{
+	width: 18px; height: auto;
+	margin-right: 8px; float: left;
+}
+.footer__work a.social.facebook{margin-right: 5px;}
+.footer__work a.social img{
+	max-width: 18px;
+}
+.seattle{
+	padding-left: 40px;
+}
+@media (max-width:767px){
+	.seattle{
+		padding-left: 15px;
+	}
+}
+@media (max-width:900px){
+	.perspective__content blockquote.rtl{
+		margin-left: 0px;
+	}
 }
