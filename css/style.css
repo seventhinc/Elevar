@@ -4418,14 +4418,15 @@ header .container-fluid>.navbar-header {
 }
 .footer__work a.social.facebook{margin-right: 5px;}
 .footer__work a.social img{
-	max-width: 18px;
+	max-width: 18px; opacity: .5;
 }
 .seattle{
 	padding-left: 40px;
+	margin: 0px;
 }
 @media (max-width:767px){
 	.seattle{
-		padding-left: 15px;
+		padding-left: 15px; margin: 0px;
 	}
 }
 @media (max-width:900px){
