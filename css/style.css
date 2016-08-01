@@ -4306,6 +4306,7 @@ header .container-fluid>.navbar-header {
 	}
 	.home-slider__content{
 		    display: inline-block; padding: 10px 0;
+				width: 100%;
 	}
 	.newList.post-list--home .newBox, .newList.post-list--home .newBox.horiz2,.newList.post-list--home .newBox.vert2.ipadPort{
 		width: 100%; margin: 0 0 10px 0; height: auto;
