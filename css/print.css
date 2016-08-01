@@ -24,7 +24,7 @@
 	.navbar.navbar .navbar-header{
 		overflow: hidden;
 	}
-	.header_logo{width: 150px;}
+	.header_logo img{width: 150px;}
 
 	.home-slider__content{width: 70%;}
 	.home-slider__content__link{width: auto;
@@ -50,7 +50,24 @@
   .page-content--entrepreneurs .entrepreneurs-row .hlaf-wdth{
     width: 366px; height: 300px;
   }
-.entreprenueurs-page-details, .legal{margin-top: 0px;}
+  .team-member{
+    width: 350px; float: left; margin-right: 10px;
+  }
+  .team-page.team-page-details{margin-top: 10px;}
+  .team-member-image{width: 350px;}
+  .team-page .table .table-cell{
+    width: 360px; margin-right: 20px;float: left;
+  }
+  .team-page .team-pageCaption{background-color: transparent;}
+  .team-page .team-pageCaption .caption{
+    position: static;
+    margin-top: -178px;
+  }
+.entreprenueurs-page-details .page-title, .legal .page-title{margin-top: 0px;}
+
+.page-content--contact--locations .col-md-4{
+  width: 330px; height: 472px; margin-right: 40px; float: left;
+}
 	.footer__address, .footer_work,.seattle{padding: 0px;}
 	.footer__work{width: 100%; float:left; text-align: center;}
 	.footer__work a.social{display:inline-block; float: none;}
