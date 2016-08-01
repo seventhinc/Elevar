@@ -1,3 +1,57 @@
-/* Welcome to Compass. Use this file to define print styles.
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+@page {
+  size: A4;
+  margin: 0;
+}
+@media print {
+  html, body {
+    width: 210mm;
+    }
+  *{transition:none!important;-webkit-print-color-adjust:exact;box-sizing: border-box;}
+
+
+	a{text-decoration: none;}
+/*	a[href^=http]:after {
+      content:" <" attr(href) "> ";
+   }*/
+	header{position: static; width: 100%; background-color: #fff;}
+	header .container{    width: 100%; margin: 0 auto;}
+  header .container-fluid{padding: 0px;}
+	section{  overflow: hidden;}
+	.home-slider{margin-top: 0px;
+    background-color: #fff;}
+	#header-menu{display: none;}
+	.navbar-toggle{display: none;}
+	.navbar.navbar .navbar-header{
+		overflow: hidden;
+	}
+	.header_logo{width: 150px;}
+
+	.home-slider__content{width: 70%;}
+	.home-slider__content__link{width: auto;
+    float: left;}
+    .home-slider__image img{width: 100%;max-height:none; margin: 0px;}
+    .home-slider ul li{padding: 0px;}
+	.post-list--home.newList.container {
+	    padding: 0px;
+	}
+	.newList.post-list--home .newBox, .newList.post-list--home .newBox.horiz2, .newList.post-list--home .newBox.vert2.ipadPort{
+		width: 380px; margin-right: 10px; min-height: 235px;
+	}
+  	.newList.post-list--home .newBox, .newList.post-list--home .newBox.horiz2 img, .newList.post-list--home .newBox.vert2.ipadPort img{
+      float: left;
+    }
+  .newList.post-list--home .newBox.vert2.ipadPort{min-height: 480px;}
+	.post-list__post--aboutUs.newBox.redBorderLeftTopHor.box--red.print-right.vert2.horiz2.img{float: right;}
+	.newList.post-list--home .newBox.bgImg{
+		min-height: 235px;
+	}
+	.newList.post-list--home .newBox.vert2.ipadPort{float: right;}
+
+  .page-content--entrepreneurs .entrepreneurs-row .hlaf-wdth{
+    width: 366px; height: 300px;
+  }
+.entreprenueurs-page-details, .legal{margin-top: 0px;}
+	.footer__address, .footer_work,.seattle{padding: 0px;}
+	.footer__work{width: 100%; float:left; text-align: center;}
+	.footer__work a.social{display:inline-block; float: none;}
+}
