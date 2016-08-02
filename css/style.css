@@ -1,3 +1,4 @@
+
 @charset "UTF-8";
 
 /*
@@ -131,9 +132,7 @@ img {
 
 /* line 102, sass/style.scss */
 
-.box--red {
-	background: #e60b1a;
-}
+
 
 
 /* line 106, sass/style.scss */
@@ -3889,7 +3888,7 @@ header .container-fluid>.navbar-header {
 .newList.post-list--home .box--blue:hover {
 	background-color: #a6dad9;
 }
-
+.bg-redColor{background-color: #ff4b38;}
 
 .newList.post-list--home .box--red:hover {
 	background-color: rgba(255, 75, 56, 0.90);
